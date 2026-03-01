@@ -9,18 +9,18 @@
 <style>
 body{
     margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to right,#fff5e6,#ffe6f2);
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right,#fff4e6,#ffe6f2);
 }
 
 /* Navbar */
 nav{
     background:#6b3e26;
+    color:white;
     padding:15px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    color:white;
     position:sticky;
     top:0;
 }
@@ -31,7 +31,7 @@ nav ul{
     gap:20px;
 }
 
-nav ul li a{
+nav a{
     color:white;
     text-decoration:none;
     font-weight:bold;
@@ -40,8 +40,8 @@ nav ul li a{
 /* Hero Section */
 .hero{
     text-align:center;
-    padding:80px 20px;
-    background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93") center/cover;
+    padding:100px 20px;
+    background:url("https://images.unsplash.com/photo-1509042239860-f550ce710b93") center/cover;
     color:white;
 }
 
@@ -51,19 +51,19 @@ nav ul li a{
 
 /* Sections */
 .section{
-    padding:50px 20px;
+    padding:60px 20px;
 }
 
 .section h2{
     text-align:center;
-    margin-bottom:40px;
     color:#6b3e26;
+    margin-bottom:40px;
 }
 
-/* Menu Grid */
+/* Grid Layout */
 .menu-grid{
     display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:25px;
 }
 
@@ -93,26 +93,31 @@ nav ul li a{
 .price{
     color:#d35400;
     font-weight:bold;
+    font-size:18px;
 }
 
 /* Contact */
 .contact{
-    text-align:center;
     background:#6b3e26;
     color:white;
+    text-align:center;
     padding:40px;
 }
 
 .social a{
     color:white;
-    margin:0 10px;
-    font-size:20px;
+    margin:0 12px;
+    text-decoration:none;
 }
 
 /* Responsive */
 @media(max-width:600px){
     .hero h1{
         font-size:35px;
+    }
+
+    nav ul{
+        gap:10px;
     }
 }
 </style>
@@ -121,19 +126,19 @@ nav ul li a{
 <body>
 
 <nav>
-<h2>🍩 The Velvet Bean Cafe</h2>
+<h2>☕ The Velvet Bean Cafe</h2>
 <ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#coffee">Coffee</a></li>
-<li><a href="#bakery">Bakery & Dessert</a></li>
+<li><a href="#bakery">Bakery</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 
-<!-- Home Section -->
+<!-- Home -->
 <section class="hero" id="home">
 <h1>Welcome to The Velvet Bean Cafe</h1>
-<p>Enjoy the best coffee, bakery, and dessert in a cozy modern atmosphere.</p>
+<p>Enjoy premium coffee, fresh bakery, and delicious desserts in a cozy modern atmosphere.</p>
 </section>
 
 <!-- Coffee Section -->
@@ -234,7 +239,7 @@ nav ul li a{
 </div>
 </section>
 
-<!-- Contact Section -->
+<!-- Contact -->
 <section class="contact" id="contact">
 <h2>Contact Us</h2>
 <p>Email: velvetbean@example.com</p>
@@ -250,7 +255,7 @@ nav ul li a{
 </section>
 
 <script>
-// Smooth scroll navigation
+// Smooth scrolling
 document.querySelectorAll("nav a").forEach(anchor=>{
     anchor.addEventListener("click",function(e){
         e.preventDefault();
