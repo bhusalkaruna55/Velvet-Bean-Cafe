@@ -4,325 +4,269 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VASTRA | Premium Fashion Store</title>
+<title>The Velvet Bean Cafe</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<!-- Vintage Style Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
 body{
-    background:#f4f1ea;
-    color:#222;
+    margin:0;
+    font-family:'Playfair Display', serif;
+    background: linear-gradient(to right,#fff5e6,#ffe6f2);
 }
 
-header{
-    background:#111;
-    padding:15px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+/* Navigation */
+nav{
+    background:#4b1f1f;
+    padding:15px;
     position:sticky;
     top:0;
 }
 
-.logo{
-    color:#fff;
-    font-size:28px;
-    font-weight:700;
-    letter-spacing:3px;
-}
-
 nav a{
-    color:#fff;
+    color:white;
+    margin:15px;
     text-decoration:none;
-    margin-left:25px;
-    font-weight:500;
+    font-weight:600;
 }
 
-nav a:hover{
-    color:#c8a951;
-}
-
+/* Hero Section */
 .hero{
-    height:70vh;
-    background:linear-gradient(to right,#111,#333);
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    text-align:center;
+    padding:100px 20px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+    background-size:cover;
     color:white;
 }
 
 .hero h1{
-    font-size:48px;
+    font-family:'Cinzel', serif;
+    font-size:55px;
 }
 
-section{
-    padding:60px 8%;
+/* Sections */
+.section{
+    padding:60px 40px;
 }
 
-section h2{
+.section h2{
     text-align:center;
     margin-bottom:40px;
-    font-size:32px;
-    color:#111;
+    font-family:'Cinzel', serif;
 }
 
-.products{
+/* Menu Grid */
+.menu-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
 }
 
 .card{
     background:white;
-    border-radius:10px;
+    border-radius:15px;
     overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
     transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-5px);
+    transform:translateY(-8px);
 }
 
 .card img{
     width:100%;
-    height:280px;
-    object-fit:contain;
-    background:white;
-    padding:20px;
+    height:200px;
+    object-fit:cover;
 }
 
 .card-content{
-    padding:20px;
+    padding:15px;
+    text-align:center;
 }
 
 .price{
-    color:#b12704;
-    font-weight:600;
-    margin:10px 0;
+    color:#d35400;
+    font-weight:bold;
+    font-size:18px;
 }
 
-.rating{
-    color:#f4b400;
-    margin-bottom:10px;
-}
-
-.btn{
-    display:inline-block;
-    padding:8px 18px;
-    background:#111;
+.order-btn{
+    background:#4b1f1f;
     color:white;
-    text-decoration:none;
-    border-radius:20px;
-    font-size:14px;
-}
-
-.btn:hover{
-    background:#c8a951;
-}
-
-.contact{
-    background:#111;
-    color:white;
-}
-
-.contact-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:30px;
-}
-
-.contact-form input,
-.contact-form textarea{
-    width:100%;
-    padding:10px;
-    margin-bottom:15px;
+    padding:8px 16px;
     border:none;
-    border-radius:5px;
-}
-
-.contact-form button{
-    padding:10px 20px;
-    background:#c8a951;
-    border:none;
-    color:white;
-    border-radius:20px;
+    border-radius:8px;
     cursor:pointer;
+    margin-top:10px;
 }
 
-footer{
-    background:#000;
-    color:white;
+/* Contact Section */
+.contact{
     text-align:center;
-    padding:20px;
+    background:#4b1f1f;
+    color:white;
+    padding:40px;
+}
+
+.social a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+}
+
+/* Responsive Design */
+@media(max-width:600px){
+    .hero h1{
+        font-size:35px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<header>
-<div class="logo">VASTRA</div>
+<!-- Navigation -->
 <nav>
 <a href="#">Home</a>
-<a href="#men">Men</a>
-<a href="#women">Women</a>
+<a href="#coffee">Coffee</a>
+<a href="#dessert">Desserts</a>
+<a href="#bakery">Bakery</a>
 <a href="#contact">Contact</a>
 </nav>
-</header>
 
-<div class="hero">
-<h1>Premium Clothing Collection</h1>
-</div>
+<!-- Homepage Section -->
+<section class="hero">
+<h1>Welcome to The Velvet Bean Cafe</h1>
+<p>Experience the perfect taste of coffee, bakery, and dessert in a warm vintage aesthetic atmosphere.</p>
+<button class="order-btn">Order Now</button>
+</section>
 
-<!-- MEN SECTION -->
-<section id="men">
-<h2>👕 Men’s Clothing</h2>
+<!-- Coffee Section -->
+<section class="section" id="coffee">
+<h2>Coffee Collection</h2>
 
-<div class="products">
+<div class="menu-grid">
 
-<!-- T-SHIRT -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1541167760496-1628856ab772">
 <div class="card-content">
-<h3>Men Plain T-Shirt</h3>
-<div class="price">NPR 1100</div>
-<div class="rating">⭐⭐⭐⭐☆</div>
-<p>Premium cotton round neck T-shirt.</p>
-<a href="#" class="btn">🛒 Order Now</a>
+<h3>Americano</h3>
+<p class="price">$3.5</p>
+<button class="order-btn">Order Now</button>
 </div>
 </div>
 
-<!-- PANTS -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1593030761757-71fae45fa0e7?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1561047029-3000c68339ca">
 <div class="card-content">
-<h3>Formal Cotton Pants</h3>
-<div class="price">NPR 2800</div>
-<div class="rating">⭐⭐⭐⭐⭐</div>
-<p>Comfortable slim fit formal pants.</p>
-<a href="#" class="btn">🛒 Order Now</a>
+<h3>Latte</h3>
+<p class="price">$4</p>
+<button class="order-btn">Order Now</button>
 </div>
 </div>
 
-<!-- JACKET -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1602810316248-14c34b9b6a75?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
 <div class="card-content">
-<h3>Men Winter Jacket</h3>
-<div class="price">NPR 3500</div>
-<div class="rating">⭐⭐⭐⭐☆</div>
-<p>Stylish and warm winter jacket.</p>
-<a href="#" class="btn">🛒 Order Now</a>
+<h3>Cappuccino</h3>
+<p class="price">$4.2</p>
+<button class="order-btn">Order Now</button>
 </div>
 </div>
 
-<!-- SPORTSWEAR -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a">
 <div class="card-content">
-<h3>Men Sportswear Set</h3>
-<div class="price">NPR 2200</div>
-<div class="rating">⭐⭐⭐⭐☆</div>
-<p>Stretchable breathable sportswear.</p>
-<a href="#" class="btn">🛒 Order Now</a>
+<h3>Espresso</h3>
+<p class="price">$3</p>
+<button class="order-btn">Order Now</button>
 </div>
 </div>
 
 </div>
 </section>
 
-<!-- WOMEN SECTION -->
-<section id="women">
-<h2>👗 Women’s Clothing</h2>
+<!-- Dessert Section -->
+<section class="section" id="dessert">
+<h2>Desserts</h2>
 
-<div class="products">
+<div class="menu-grid">
 
-<!-- DRESS -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e">
 <div class="card-content">
-<h3>Elegant Party Dress</h3>
-<div class="price">NPR 4200</div>
-<div class="rating">⭐⭐⭐⭐⭐</div>
-<p>Beautiful premium fashion dress.</p>
-<a href="#" class="btn">🛒 Order Now</a>
+<h3>Cookies</h3>
+<p class="price">$2.5</p>
+<button class="order-btn">Order Now</button>
 </div>
 </div>
 
-<!-- JEANS -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1595341595379-cf0f5b5a91e6?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c">
 <div class="card-content">
-<h3>Women Denim Jeans</h3>
-<div class="price">NPR 3200</div>
-<div class="rating">⭐⭐⭐⭐☆</div>
-<p>High quality stretch denim jeans.</p>
-<a href="#" class="btn">🛒 Order Now</a>
+<h3>Muffins</h3>
+<p class="price">$2.8</p>
+<button class="order-btn">Order Now</button>
 </div>
 </div>
 
-<!-- TOP -->
 <div class="card">
-<img src="https://images.unsplash.com/photo-1602810316458-7d76e76c3c26?auto=format&fit=crop&w=800&q=80">
+<img src="https://images.unsplash.com/photo-1509365465985-25d11c17e812">
 <div class="card-content">
-<h3>Stylish Fashion Top</h3>
-<div class="price">NPR 1800</div>
-<div class="rating">⭐⭐⭐⭐☆</div>
-<p>Trendy women casual top.</p>
-<a href="#" class="btn">🛒 Order Now</a>
-</div>
-</div>
-
-<!-- HOODIE -->
-<div class="card">
-<img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80">
-<div class="card-content">
-<h3>Women Hoodie</h3>
-<div class="price">NPR 2500</div>
-<div class="rating">⭐⭐⭐⭐☆</div>
-<p>Warm stylish hoodie collection.</p>
-<a href="#" class="btn">🛒 Order Now</a>
+<h3>Pastry</h3>
+<p class="price">$3</p>
+<button class="order-btn">Order Now</button>
 </div>
 </div>
 
 </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-<h2>📍 Contact Information</h2>
+<!-- Bakery Section -->
+<section class="section" id="bakery">
+<h2>Bakery Items</h2>
 
-<div class="contact-container">
+<div class="menu-grid">
 
-<div>
-<p><strong>Store:</strong> Vastra</p>
-<p><strong>Phone:</strong> 9708862050</p>
-<p><strong>Email:</strong> Vastracollection21@gmail.com</p>
-<p><strong>Location:</strong> Tilottama-11, Rupandehi, Nepal</p>
-<p style="margin-top:15px;">All people are warmly welcome ❤️</p>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1559620192-032c4bc4674e">
+<div class="card-content">
+<h3>Croissant</h3>
+<p class="price">$2.9</p>
+<button class="order-btn">Order Now</button>
+</div>
 </div>
 
-<div class="contact-form">
-<input type="text" placeholder="Your Name">
-<input type="email" placeholder="Your Email">
-<textarea rows="5" placeholder="Your Message"></textarea>
-<button>Send Message</button>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1587248720323-8ebe5c7a6d2b">
+<div class="card-content">
+<h3>Bread</h3>
+<p class="price">$2.4</p>
+<button class="order-btn">Order Now</button>
+</div>
 </div>
 
 </div>
 </section>
 
-<footer>
-© 2026 VASTRA | Nepal Premium Clothing Store
-</footer>
+<!-- Contact Section -->
+<section class="contact" id="contact">
+<h2>Contact Us</h2>
+<p>Location: Kathmandu, Nepal</p>
+<p>Email: velvetbean@gmail.com</p>
+<p>Phone: +977 98XXXXXXXX</p>
+
+<div class="social">
+<a href="#">Facebook</a>
+<a href="#">Instagram</a>
+<a href="#">Twitter</a>
+</div>
+
+<p style="margin-top:20px;">© 2026 The Velvet Bean Cafe</p>
+</section>
 
 </body>
 </html>
