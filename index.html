@@ -6,22 +6,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VELVET BEAN CAFE</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
 body{
     margin:0;
     font-family:'Poppins', sans-serif;
-    background:linear-gradient(to right,#f8e1f4,#fde2c4);
+    background:linear-gradient(135deg,#fbc2eb,#a6c1ee,#fddb92);
+    background-size:400% 400%;
+    animation:gradientBG 10s ease infinite;
+}
+
+@keyframes gradientBG{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
 }
 
 header{
-    background:#3e2723;
+    background:linear-gradient(to right,#4e342e,#6d4c41);
     color:white;
     text-align:center;
     padding:25px;
     font-family:'Playfair Display', serif;
-    font-size:38px;
+    font-size:40px;
     letter-spacing:4px;
 }
 
@@ -38,10 +46,10 @@ header{
 .section-title{
     font-family:'Playfair Display', serif;
     font-size:28px;
-    color:#3e2723;
-    border-bottom:3px solid #3e2723;
+    color:#4e342e;
+    margin-top:25px;
+    border-bottom:3px solid #4e342e;
     padding-bottom:5px;
-    margin-top:20px;
 }
 
 .items{
@@ -56,45 +64,46 @@ header{
     border-radius:20px;
     padding:15px;
     text-align:center;
-    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
     transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-8px);
+    transform:scale(1.05);
 }
 
 .card img{
     width:100%;
-    height:150px;
+    height:160px;
     border-radius:15px;
     object-fit:cover;
 }
 
 .item-name{
-    font-weight:bold;
+    font-weight:600;
     margin:10px 0 5px;
     font-size:18px;
 }
 
 .price{
-    color:#b76e79;
+    color:#d81b60;
     font-weight:bold;
+    font-size:16px;
 }
 
 .contact{
-    width:24%;
-    background:white;
+    width:25%;
+    background:linear-gradient(to bottom,#ffffff,#ffe0b2);
     padding:20px;
     border-radius:20px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
     height:fit-content;
 }
 
 .contact h2{
     text-align:center;
     font-family:'Playfair Display', serif;
-    color:#3e2723;
+    color:#4e342e;
 }
 
 .contact p{
@@ -103,7 +112,7 @@ header{
 }
 
 footer{
-    background:#3e2723;
+    background:#4e342e;
     color:white;
     text-align:center;
     padding:15px;
@@ -125,49 +134,49 @@ footer{
 <div class="items">
 
 <div class="card">
-<img src="https://source.unsplash.com/300x200/?espresso" alt="Espresso">
+<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Espresso">
 <div class="item-name">Espresso</div>
 <div class="price">$3.00</div>
 </div>
 
 <div class="card">
-<img src="https://source.unsplash.com/300x200/?americano" alt="Americano">
+<img src="https://images.unsplash.com/photo-1498804103079-a6351b050096" alt="Americano">
 <div class="item-name">Americano</div>
 <div class="price">$3.50</div>
 </div>
 
 <div class="card">
-<img src="https://source.unsplash.com/300x200/?cappuccino" alt="Cappuccino">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Cappuccino">
 <div class="item-name">Cappuccino</div>
 <div class="price">$4.50</div>
 </div>
 
 <div class="card">
-<img src="https://source.unsplash.com/300x200/?latte" alt="Latte">
+<img src="https://images.unsplash.com/photo-1521305916504-4a1121188589" alt="Latte">
 <div class="item-name">Latte</div>
 <div class="price">$4.75</div>
 </div>
 
 <div class="card">
-<img src="https://source.unsplash.com/300x200/?mocha" alt="Mocha">
+<img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699" alt="Mocha">
 <div class="item-name">Mocha</div>
 <div class="price">$5.00</div>
 </div>
 
 <div class="card">
-<img src="https://source.unsplash.com/300x200/?caramel-latte" alt="Caramel Latte">
+<img src="https://images.unsplash.com/photo-1587731642627-86f7d5f8d48d" alt="Caramel Latte">
 <div class="item-name">Caramel Latte</div>
 <div class="price">$5.25</div>
 </div>
 
 <div class="card">
-<img src="https://source.unsplash.com/300x200/?vanilla-latte" alt="Vanilla Latte">
+<img src="https://images.unsplash.com/photo-1587731642521-8e37d7d6b3a3" alt="Vanilla Latte">
 <div class="item-name">Vanilla Latte</div>
 <div class="price">$5.25</div>
 </div>
 
 <div class="card">
-<img src="https://source.unsplash.com/300x200/?iced-coffee" alt="Iced Coffee">
+<img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735" alt="Iced Coffee">
 <div class="item-name">Iced Coffee</div>
 <div class="price">$4.00</div>
 </div>
@@ -179,31 +188,31 @@ footer{
 <div class="items">
 
 <div class="card">
-<img src="https://source.unsplash.com/300x200/?croissant" alt="Croissant">
+<img src="https://images.unsplash.com/photo-1509440159596-0249088772ff" alt="Croissant">
 <div class="item-name">Croissant</div>
 <div class="price">$2.50</div>
 </div>
 
 <div class="card">
-<img src="https://source.unsplash.com/300x200/?chocolate-croissant" alt="Chocolate Croissant">
+<img src="https://images.unsplash.com/photo-1548946526-f69e2424cf45" alt="Chocolate Croissant">
 <div class="item-name">Chocolate Croissant</div>
 <div class="price">$3.00</div>
 </div>
 
 <div class="card">
-<img src="https://source.unsplash.com/300x200/?danish-pastry" alt="Danish Pastry">
+<img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec" alt="Danish Pastry">
 <div class="item-name">Danish Pastry</div>
 <div class="price">$3.50</div>
 </div>
 
 <div class="card">
-<img src="https://source.unsplash.com/300x200/?muffin" alt="Muffins">
+<img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d" alt="Muffins">
 <div class="item-name">Muffins</div>
 <div class="price">$2.75</div>
 </div>
 
 <div class="card">
-<img src="https://source.unsplash.com/300x200/?cookies" alt="Cookies">
+<img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e" alt="Cookies">
 <div class="item-name">Cookies</div>
 <div class="price">$2.00</div>
 </div>
