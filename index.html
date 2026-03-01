@@ -2,109 +2,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Velvet Bean Cafe | Aesthetic Coffee & Treats</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Velvet Bean Cafe</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(120deg,#ffe6f0,#fff5e6,#e6f7ff);
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:#6b3e26;
+    color:white;
+    position:sticky;
+    top:0;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero h1{
+    font-size:50px;
+    color:#6b3e26;
+}
+
+.hero p{
+    font-size:20px;
+    color:#555;
+}
+
+/* Sections */
+.section{
+    padding:50px 40px;
+}
+
+.section h2{
+    text-align:center;
+    color:#6b3e26;
+    margin-bottom:40px;
+}
+
+/* Menu Grid */
+.menu-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+    text-align:center;
+}
+
+.price{
+    color:#d35400;
+    font-weight:bold;
+}
+
+/* Contact */
+.contact{
+    text-align:center;
+    padding:50px;
+    background:#6b3e26;
+    color:white;
+}
+
+.social a{
+    color:white;
+    margin:10px;
+    font-size:20px;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#3b2417;
+    color:white;
+}
+
+</style>
 </head>
+
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">The Velvet Bean</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+<nav>
+<h2>☕ Velvet Bean Cafe</h2>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#coffee">Coffee</a></li>
+<li><a href="#bakery">Bakery & Dessert</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 
-    <!-- Hero Section -->
-    <header id="home" class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com');">
-        <div class="hero-content">
-            <h1>Smooth as Velvet, Rich as Beans.</h1>
-            <p>Experience the most aesthetic coffee corner in the city.</p>
-            <a href="#menu" class="btn">Explore Menu</a>
-        </div>
-    </header>
+<section class="hero">
+<h1>Welcome to The Velvet Bean Cafe</h1>
+<p>Enjoy the finest coffee, bakery, and dessert items in a cozy modern atmosphere.</p>
+</section>
 
-    <!-- Menu Section -->
-    <section id="menu" class="menu-section">
-        <h2 class="section-title">Our Curated Selection</h2>
-        
-        <!-- Coffee Section -->
-        <h3 class="category-title">Signature Coffee</h3>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="https://images.unsplash.com" alt="Velvet Latte">
-                <h4>Velvet Latte</h4>
-                <p class="price">$5.50</p>
-            </div>
-            <div class="menu-item">
-                <img src="https://images.unsplash.com" alt="Dark Mocha">
-                <h4>Dark Mocha</h4>
-                <p class="price">$6.00</p>
-            </div>
-        </div>
+<!-- Coffee Section -->
+<section id="coffee" class="section">
+<h2>Coffee Collection</h2>
 
-        <!-- Desserts Section -->
-        <h3 class="category-title">Gourmet Desserts</h3>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="https://images.unsplash.com" alt="Lava Cake">
-                <h4>Molten Lava Cake</h4>
-                <p class="price">$8.50</p>
-            </div>
-            <div class="menu-item">
-                <img src="https://images.unsplash.com" alt="Berry Cheesecake">
-                <h4>Velvet Cheesecake</h4>
-                <p class="price">$7.25</p>
-            </div>
-        </div>
+<div class="menu-grid">
 
-        <!-- Bakery Section -->
-        <h3 class="category-title">Fresh Bakery</h3>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="https://images.unsplash.com" alt="Sourdough">
-                <h4>Artisan Sourdough</h4>
-                <p class="price">$9.00</p>
-            </div>
-            <div class="menu-item">
-                <img src="https://images.unsplash.com" alt="Croissant">
-                <h4>Buttery Croissant</h4>
-                <p class="price">$4.50</p>
-            </div>
-        </div>
-    </section>
+<div class="card">
+<img src="https://via.placeholder.com/300x180?text=Americano">
+<div class="card-content">
+<h3>Americano</h3>
+<p class="price">$3.5</p>
+</div>
+</div>
 
-    <!-- Contact & Footer -->
-    <footer id="contact">
-        <div class="footer-content">
-            <div class="contact-info">
-                <h3>Visit Us</h3>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Velvet Lane, Bean City</p>
-                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
-                <p><i class="fas fa-envelope"></i> hello@velvetbean.com</p>
-            </div>
-            <div class="socials">
-                <h3>Follow Our Journey</h3>
-                <div class="icons">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                </div>
-            </div>
-        </div>
-        <p class="copyright">&copy; 2024 The Velvet Bean Cafe. All Rights Reserved.</p>
-    </footer>
+<div class="card">
+<img src="https://via.placeholder.com/300x180?text=Latte">
+<div class="card-content">
+<h3>Latte</h3>
+<p class="price">$4.0</p>
+</div>
+</div>
 
-    <script src="script.js"></script>
+<div class="card">
+<img src="https://via.placeholder.com/300x180?text=Cappuccino">
+<div class="card-content">
+<h3>Cappuccino</h3>
+<p class="price">$4.2</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x180?text=Espresso">
+<div class="card-content">
+<h3>Espresso</h3>
+<p class="price">$3.0</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x180?text=Mocha">
+<div class="card-content">
+<h3>Mocha</h3>
+<p class="price">$4.5</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x180?text=Iced+Coffee">
+<div class="card-content">
+<h3>Iced Coffee</h3>
+<p class="price">$3.8</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Bakery Section -->
+<section id="bakery" class="section">
+<h2>Bakery & Dessert</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+<img src="https://via.placeholder.com/300x180?text=Croissant">
+<div class="card-content">
+<h3>Croissant</h3>
+<p class="price">$2.5</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x180?text=Chocolate+Croissant">
+<div class="card-content">
+<h3>Chocolate Croissant</h3>
+<p class="price">$3.0</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x180?text=Cookies">
+<div class="card-content">
+<h3>Cookies</h3>
+<p class="price">$2.0</p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/300x180?text=Muffin">
+<div class="card-content">
+<h3>Muffin</h3>
+<p class="price">$2.8</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+<h2>Contact Us</h2>
+<p>Email: velvetbean@gmail.com</p>
+<p>Phone: +977-98XXXXXXXX</p>
+
+<div class="social">
+<a href="#">Facebook</a>
+<a href="#">Instagram</a>
+<a href="#">Twitter</a>
+</div>
+</section>
+
+<footer>
+<p>© 2025 The Velvet Bean Cafe. All Rights Reserved.</p>
+</footer>
+
+<script>
+// Smooth scrolling
+document.querySelectorAll("nav a").forEach(anchor=>{
+    anchor.addEventListener("click",function(e){
+        const target = this.getAttribute("href");
+        if(target.startsWith("#")){
+            e.preventDefault();
+            document.querySelector(target).scrollIntoView({
+                behavior:"smooth"
+            });
+        }
+    });
+});
+</script>
+
 </body>
 </html>
