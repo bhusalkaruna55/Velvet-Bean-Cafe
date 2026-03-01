@@ -1,170 +1,231 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>VELVET BEAN CAFE</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #fdf6f0;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VELVET BEAN CAFE</title>
 
-        header {
-            background-color: #6f4e37;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            font-size: 32px;
-            letter-spacing: 2px;
-        }
+<style>
+body{
+    margin:0;
+    font-family: 'Georgia', serif;
+    background: linear-gradient(to right, #f8e8ee, #f3d1f4);
+}
 
-        .container {
-            display: flex;
-        }
+header{
+    background-color:#4b2e2e;
+    color:white;
+    padding:20px;
+    text-align:center;
+    font-size:32px;
+    letter-spacing:3px;
+}
 
-        .menu {
-            width: 70%;
-            padding: 20px;
-        }
+.container{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+}
 
-        .contact {
-            width: 30%;
-            background-color: #f4e1d2;
-            padding: 20px;
-            border-left: 3px solid #6f4e37;
-        }
+.menu{
+    width:70%;
+}
 
-        h2 {
-            color: #6f4e37;
-            border-bottom: 2px solid #d9a066;
-            padding-bottom: 5px;
-        }
+.section-title{
+    font-size:26px;
+    margin-top:20px;
+    color:#4b2e2e;
+    border-bottom:2px solid #4b2e2e;
+}
 
-        .item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-            background-color: white;
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 2px 2px 8px #ccc;
-        }
+.item{
+    display:flex;
+    align-items:center;
+    margin:15px 0;
+    background:white;
+    padding:10px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
 
-        .item img {
-            width: 80px;
-            height: 80px;
-            border-radius: 10px;
-            margin-right: 15px;
-        }
+.item img{
+    width:100px;
+    height:100px;
+    border-radius:15px;
+    margin-right:15px;
+    object-fit:cover;
+}
 
-        .price {
-            margin-left: auto;
-            font-weight: bold;
-            color: #b5651d;
-        }
+.item-name{
+    font-size:18px;
+    font-weight:bold;
+}
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #6f4e37;
-            color: white;
-        }
-    </style>
+.price{
+    color:#b76e79;
+    font-weight:bold;
+}
+
+.contact{
+    width:25%;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    height:fit-content;
+}
+
+.contact h2{
+    text-align:center;
+    color:#4b2e2e;
+}
+
+.contact p{
+    font-size:16px;
+    margin:10px 0;
+}
+
+footer{
+    text-align:center;
+    background:#4b2e2e;
+    color:white;
+    padding:10px;
+    margin-top:20px;
+}
+</style>
 </head>
 
 <body>
 
-<header>
-    VELVET BEAN CAFE
-</header>
+<header>VELVET BEAN CAFE</header>
 
 <div class="container">
 
-    <div class="menu">
-        <h2>☕ Coffee Menu</h2>
+<div class="menu">
 
-        <div class="item">
-            <img src="https://source.unsplash.com/80x80/?espresso">
-            Espresso <span class="price">Rs. 180</span>
-        </div>
+<h2 class="section-title">☕ Coffee Menu</h2>
 
-        <div class="item">
-            <img src="https://source.unsplash.com/80x80/?americano">
-            Americano <span class="price">Rs. 200</span>
-        </div>
+<div class="item">
+<img src="https://source.unsplash.com/100x100/?espresso" alt="Espresso">
+<div>
+<div class="item-name">Espresso</div>
+<div class="price">$3.00</div>
+</div>
+</div>
 
-        <div class="item">
-            <img src="https://source.unsplash.com/80x80/?cappuccino">
-            Cappuccino <span class="price">Rs. 250</span>
-        </div>
+<div class="item">
+<img src="https://source.unsplash.com/100x100/?americano" alt="Americano">
+<div>
+<div class="item-name">Americano</div>
+<div class="price">$3.50</div>
+</div>
+</div>
 
-        <div class="item">
-            <img src="https://source.unsplash.com/80x80/?latte">
-            Latte <span class="price">Rs. 260</span>
-        </div>
+<div class="item">
+<img src="https://source.unsplash.com/100x100/?cappuccino" alt="Cappuccino">
+<div>
+<div class="item-name">Cappuccino</div>
+<div class="price">$4.50</div>
+</div>
+</div>
 
-        <div class="item">
-            <img src="https://source.unsplash.com/80x80/?mocha">
-            Mocha <span class="price">Rs. 280</span>
-        </div>
+<div class="item">
+<img src="https://source.unsplash.com/100x100/?latte" alt="Latte">
+<div>
+<div class="item-name">Latte</div>
+<div class="price">$4.75</div>
+</div>
+</div>
 
-        <div class="item">
-            <img src="https://source.unsplash.com/80x80/?caramel-latte">
-            Caramel Latte <span class="price">Rs. 300</span>
-        </div>
+<div class="item">
+<img src="https://source.unsplash.com/100x100/?mocha" alt="Mocha">
+<div>
+<div class="item-name">Mocha</div>
+<div class="price">$5.00</div>
+</div>
+</div>
 
-        <div class="item">
-            <img src="https://source.unsplash.com/80x80/?vanilla-latte">
-            Vanilla Latte <span class="price">Rs. 300</span>
-        </div>
+<div class="item">
+<img src="https://source.unsplash.com/100x100/?caramel-latte" alt="Caramel Latte">
+<div>
+<div class="item-name">Caramel Latte</div>
+<div class="price">$5.25</div>
+</div>
+</div>
 
-        <div class="item">
-            <img src="https://source.unsplash.com/80x80/?iced-coffee">
-            Iced Coffee <span class="price">Rs. 270</span>
-        </div>
+<div class="item">
+<img src="https://source.unsplash.com/100x100/?vanilla-latte" alt="Vanilla Latte">
+<div>
+<div class="item-name">Vanilla Latte</div>
+<div class="price">$5.25</div>
+</div>
+</div>
 
-        <h2>🥐 Bakery Items</h2>
+<div class="item">
+<img src="https://source.unsplash.com/100x100/?iced-coffee" alt="Iced Coffee">
+<div>
+<div class="item-name">Iced Coffee</div>
+<div class="price">$4.00</div>
+</div>
+</div>
 
-        <div class="item">
-            <img src="https://source.unsplash.com/80x80/?croissant">
-            Croissant <span class="price">Rs. 180</span>
-        </div>
+<h2 class="section-title">🥐 Bakery Items</h2>
 
-        <div class="item">
-            <img src="https://source.unsplash.com/80x80/?chocolate-croissant">
-            Chocolate Croissant <span class="price">Rs. 220</span>
-        </div>
+<div class="item">
+<img src="https://source.unsplash.com/100x100/?croissant" alt="Croissant">
+<div>
+<div class="item-name">Croissant</div>
+<div class="price">$2.50</div>
+</div>
+</div>
 
-        <div class="item">
-            <img src="https://source.unsplash.com/80x80/?danish-pastry">
-            Danish Pastry <span class="price">Rs. 200</span>
-        </div>
+<div class="item">
+<img src="https://source.unsplash.com/100x100/?chocolate-croissant" alt="Chocolate Croissant">
+<div>
+<div class="item-name">Chocolate Croissant</div>
+<div class="price">$3.00</div>
+</div>
+</div>
 
-        <div class="item">
-            <img src="https://source.unsplash.com/80x80/?muffin">
-            Muffins <span class="price">Rs. 150</span>
-        </div>
+<div class="item">
+<img src="https://source.unsplash.com/100x100/?danish-pastry" alt="Danish Pastry">
+<div>
+<div class="item-name">Danish Pastry</div>
+<div class="price">$3.50</div>
+</div>
+</div>
 
-        <div class="item">
-            <img src="https://source.unsplash.com/80x80/?cookies">
-            Cookies <span class="price">Rs. 120</span>
-        </div>
+<div class="item">
+<img src="https://source.unsplash.com/100x100/?muffin" alt="Muffin">
+<div>
+<div class="item-name">Muffins</div>
+<div class="price">$2.75</div>
+</div>
+</div>
 
-    </div>
+<div class="item">
+<img src="https://source.unsplash.com/100x100/?cookies" alt="Cookies">
+<div>
+<div class="item-name">Cookies</div>
+<div class="price">$2.00</div>
+</div>
+</div>
 
-    <div class="contact">
-        <h2>📞 Contact Us</h2>
-        <p><b>Address:</b><br> Thamel, Kathmandu, Nepal</p>
-        <p><b>Phone:</b><br> +977-9800000000</p>
-        <p><b>Email:</b><br> velvetbeancafe@gmail.com</p>
-        <p><b>Opening Hours:</b><br> 8:00 AM - 9:00 PM</p>
-    </div>
+</div>
+
+<div class="contact">
+<h2>Contact Us</h2>
+<p><strong>Address:</strong><br> 123 Velvet Street,<br> Coffee City</p>
+<p><strong>Phone:</strong><br> +123 456 7890</p>
+<p><strong>Email:</strong><br> velvetbean@email.com</p>
+<p><strong>Opening Hours:</strong><br> 8:00 AM – 10:00 PM</p>
+</div>
 
 </div>
 
 <footer>
-    © 2026 VELVET BEAN CAFE | Brewed with Love ☕
+© 2026 VELVET BEAN CAFE | Crafted with Love ☕
 </footer>
 
 </body>
