@@ -3,65 +3,67 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Velvet Bean Cafe</title>
 
 <style>
-
 body{
     margin:0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(120deg,#fff1f6,#fff8e6,#e6f7ff);
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right,#fff5e6,#ffe6f2);
 }
 
-/* Navigation */
+/* Navbar */
 nav{
+    background:#6b3e26;
+    padding:15px;
     display:flex;
     justify-content:space-between;
-    padding:15px 40px;
-    background:#6b3e26;
+    align-items:center;
     color:white;
     position:sticky;
     top:0;
 }
 
 nav ul{
-    display:flex;
     list-style:none;
-    gap:25px;
+    display:flex;
+    gap:20px;
 }
 
-nav a{
+nav ul li a{
     color:white;
     text-decoration:none;
     font-weight:bold;
 }
 
-/* Hero */
+/* Hero Section */
 .hero{
     text-align:center;
     padding:80px 20px;
+    background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93") center/cover;
+    color:white;
 }
 
 .hero h1{
     font-size:50px;
-    color:#6b3e26;
 }
 
 /* Sections */
 .section{
-    padding:50px;
+    padding:50px 20px;
 }
 
 .section h2{
     text-align:center;
-    color:#6b3e26;
     margin-bottom:40px;
+    color:#6b3e26;
 }
 
-/* Grid */
+/* Menu Grid */
 .menu-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     gap:25px;
 }
 
@@ -69,23 +71,23 @@ nav a{
     background:white;
     border-radius:15px;
     overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    box-shadow:0 0 15px rgba(0,0,0,0.1);
     transition:0.3s;
 }
 
 .card:hover{
-    transform:translateY(-8px);
+    transform:scale(1.05);
 }
 
 .card img{
     width:100%;
-    height:180px;
+    height:200px;
     object-fit:cover;
 }
 
 .card-content{
-    text-align:center;
     padding:15px;
+    text-align:center;
 }
 
 .price{
@@ -98,44 +100,50 @@ nav a{
     text-align:center;
     background:#6b3e26;
     color:white;
-    padding:50px;
+    padding:40px;
 }
 
-footer{
-    text-align:center;
-    background:#3b2417;
+.social a{
     color:white;
-    padding:20px;
+    margin:0 10px;
+    font-size:20px;
 }
 
+/* Responsive */
+@media(max-width:600px){
+    .hero h1{
+        font-size:35px;
+    }
+}
 </style>
 </head>
 
 <body>
 
 <nav>
-<h2>☕ Velvet Bean Cafe</h2>
+<h2>🍩 The Velvet Bean Cafe</h2>
 <ul>
-<li><a href="#">Home</a></li>
+<li><a href="#home">Home</a></li>
 <li><a href="#coffee">Coffee</a></li>
-<li><a href="#bakery">Bakery</a></li>
+<li><a href="#bakery">Bakery & Dessert</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 
-<section class="hero">
+<!-- Home Section -->
+<section class="hero" id="home">
 <h1>Welcome to The Velvet Bean Cafe</h1>
-<p>Fresh coffee, delicious bakery, and sweet desserts for you ❤️</p>
+<p>Enjoy the best coffee, bakery, and dessert in a cozy modern atmosphere.</p>
 </section>
 
 <!-- Coffee Section -->
-<section id="coffee" class="section">
-<h2>Coffee Menu</h2>
+<section class="section" id="coffee">
+<h2>☕ Coffee Menu</h2>
 
 <div class="menu-grid">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1541167760496-1628856ab772">
+<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
 <div class="card-content">
 <h3>Americano</h3>
 <p class="price">$3.5</p>
@@ -151,7 +159,7 @@ footer{
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348">
+<img src="https://images.unsplash.com/photo-1572449043416-55f4685c9bb7">
 <div class="card-content">
 <h3>Cappuccino</h3>
 <p class="price">$4.2</p>
@@ -159,7 +167,7 @@ footer{
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04">
+<img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd">
 <div class="card-content">
 <h3>Espresso</h3>
 <p class="price">$3.0</p>
@@ -167,7 +175,7 @@ footer{
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574">
+<img src="https://images.unsplash.com/photo-1541167760496-1628856ab772">
 <div class="card-content">
 <h3>Mocha</h3>
 <p class="price">$4.5</p>
@@ -186,8 +194,8 @@ footer{
 </section>
 
 <!-- Bakery Section -->
-<section id="bakery" class="section">
-<h2>Bakery & Dessert</h2>
+<section class="section" id="bakery">
+<h2>🍰 Bakery & Dessert</h2>
 
 <div class="menu-grid">
 
@@ -200,7 +208,7 @@ footer{
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1559620192-032c4bc4674e">
+<img src="https://images.unsplash.com/photo-1509440159596-0249088772ff">
 <div class="card-content">
 <h3>Chocolate Croissant</h3>
 <p class="price">$3.0</p>
@@ -216,9 +224,9 @@ footer{
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62">
+<img src="https://images.unsplash.com/photo-1607958996333-41aef7f44a83">
 <div class="card-content">
-<h3>Muffin</h3>
+<h3>Muffins</h3>
 <p class="price">$2.8</p>
 </div>
 </div>
@@ -226,17 +234,32 @@ footer{
 </div>
 </section>
 
-<!-- Contact -->
-<section id="contact" class="contact">
+<!-- Contact Section -->
+<section class="contact" id="contact">
 <h2>Contact Us</h2>
-<p>Email: velvetbean@gmail.com</p>
-<p>Phone: +977-98XXXXXXXX</p>
-<p>Follow us on social media</p>
+<p>Email: velvetbean@example.com</p>
+<p>Phone: +977-9800000000</p>
+
+<div class="social">
+<a href="#">Facebook</a>
+<a href="#">Instagram</a>
+<a href="#">Twitter</a>
+</div>
+
+<p>© 2025 The Velvet Bean Cafe</p>
 </section>
 
-<footer>
-© 2025 The Velvet Bean Cafe
-</footer>
+<script>
+// Smooth scroll navigation
+document.querySelectorAll("nav a").forEach(anchor=>{
+    anchor.addEventListener("click",function(e){
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior:"smooth"
+        });
+    });
+});
+</script>
 
 </body>
 </html>
