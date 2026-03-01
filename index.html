@@ -4,117 +4,107 @@
 <head>
 <meta charset="UTF-8">
 <title>Vastra Collection</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
 body{
-font-family: Arial, sans-serif;
-margin:0;
-background: #fff5f8;
+    font-family: Arial, sans-serif;
+    margin:0;
+    background: linear-gradient(to right,#ffe6f0,#e6f2ff);
 }
 
 /* Navbar */
 nav{
-background: linear-gradient(90deg,#ff6b81,#ff9f43);
-padding:15px;
-display:flex;
-justify-content:space-between;
-color:white;
-position:sticky;
-top:0;
+    background:#ff5c8a;
+    padding:15px;
+    text-align:center;
 }
 
 nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-weight:bold;
+    color:white;
+    margin:20px;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:bold;
 }
 
-/* Banner */
-.banner{
-text-align:center;
-padding:80px;
-background: linear-gradient(120deg,#ff9a9e,#fad0c4);
-color:white;
-}
-
-.section{
-padding:40px;
-}
-
-h2{
-text-align:center;
-color:#ff4d6d;
+/* Sections */
+section{
+    padding:50px;
 }
 
 /* Product Grid */
-.products{
-display:grid;
-grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-padding:20px;
+.product-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
+/* Product Card */
 .card{
-background:white;
-border-radius:15px;
-padding:15px;
-text-align:center;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
-transition:0.3s;
+    background:white;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    transition:0.3s;
 }
 
 .card:hover{
-transform:scale(1.05);
+    transform:scale(1.05);
 }
 
 .card img{
-width:100%;
-height:220px;
-object-fit:cover;
-border-radius:10px;
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:12px;
 }
 
 .price{
-color:#ff4d6d;
-font-size:18px;
-font-weight:bold;
+    color:#ff5c8a;
+    font-size:18px;
+    font-weight:bold;
 }
 
 button{
-background:#ff4d6d;
-color:white;
-border:none;
-padding:10px 15px;
-border-radius:20px;
-cursor:pointer;
+    background:#ff5c8a;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
 }
 
 button:hover{
-background:#ff1f4b;
+    background:#ff2e70;
 }
 
 /* Contact */
 .contact{
-background:#ffe6ee;
-padding:40px;
-text-align:center;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    max-width:600px;
+    margin:auto;
 }
 
 input,textarea{
-width:80%;
-padding:10px;
-margin:10px;
-border-radius:8px;
-border:1px solid #ddd;
+    width:100%;
+    padding:10px;
+    margin-top:10px;
 }
 
 footer{
-background:#ff6b81;
-color:white;
-text-align:center;
-padding:20px;
+    text-align:center;
+    padding:20px;
+    background:#ff5c8a;
+    color:white;
+}
+
+h2{
+    color:#ff2e70;
 }
 
 </style>
@@ -123,123 +113,121 @@ padding:20px;
 <body>
 
 <nav>
-<div><b>Vastra Collection</b></div>
-<div>
 <a href="#">Home</a>
 <a href="#men">Men</a>
 <a href="#women">Women</a>
 <a href="#contact">Contact</a>
-</div>
 </nav>
 
-<div class="banner">
-<h1>✨ Vastra Collection ✨</h1>
-<p>Fashion that makes you shine</p>
-</div>
+<section style="text-align:center">
+<h1>🌸 Vastra Collection</h1>
+<p>Modern Fashion | Classy Style | Best Quality Clothes in Nepal</p>
+</section>
 
 <!-- MEN SECTION -->
-<div class="section" id="men">
+<section id="men">
 <h2>👕 Men's Collection</h2>
 
-<div class="products">
+<div class="product-grid">
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500">
 <h3>Men T-Shirt</h3>
+<p class="price">NPR 900</p>
 <p>Premium cotton comfortable t-shirt</p>
-<div class="price">NPR 1200</div>
-<button onclick="alert('Order placed!')">🛒 Order Now</button>
+<button>🛒 Order Now</button>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1594633313593-bab3825d0caf?w=500">
+<img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500">
 <h3>Men Shirt</h3>
-<p>Formal stylish shirt</p>
-<div class="price">NPR 2000</div>
-<button onclick="alert('Order placed!')">🛒 Order Now</button>
+<p class="price">NPR 1800</p>
+<p>Stylish formal shirt</p>
+<button>🛒 Order Now</button>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?w=500">
 <h3>Men Pants</h3>
+<p class="price">NPR 2500</p>
 <p>Comfortable fashion pants</p>
-<div class="price">NPR 2500</div>
 <button>🛒 Order Now</button>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1520975954732-35dd22299614?w=500">
+<img src="https://images.unsplash.com/photo-1564583130485-5c7a7d9c7b34?w=500">
 <h3>Men Hoodie</h3>
-<p>Winter hoodie style</p>
-<div class="price">NPR 3000</div>
+<p class="price">NPR 3000</p>
+<p>Winter stylish hoodie</p>
 <button>🛒 Order Now</button>
 </div>
 
 </div>
-</div>
+</section>
 
 <!-- WOMEN SECTION -->
-<div class="section" id="women">
+<section id="women">
 <h2>👗 Women's Collection</h2>
 
-<div class="products">
+<div class="product-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1495121605193-b116b5b09a3b?w=500">
+<h3>Women Top</h3>
+<p class="price">NPR 1200</p>
+<p>Elegant fashion top</p>
+<button>🛒 Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500">
+<h3>Women Dress</h3>
+<p class="price">NPR 3500</p>
+<p>Beautiful party dress</p>
+<button>🛒 Order Now</button>
+</div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=500">
-<h3>Women Top</h3>
-<p>Fashionable women top</p>
-<div class="price">NPR 1500</div>
+<h3>Women Skirt</h3>
+<p class="price">NPR 2000</p>
+<p>Stylish skirt fashion</p>
 <button>🛒 Order Now</button>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1495385794356-15371f348c31?w=500">
-<h3>Women Dress</h3>
-<p>Elegant party dress</p>
-<div class="price">NPR 4000</div>
-<button>🛒 Order Now</button>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f?w=500">
-<h3>Women Jeans</h3>
-<p>Stylish women jeans</p>
-<div class="price">NPR 2800</div>
-<button>🛒 Order Now</button>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?w=500">
+<img src="https://images.unsplash.com/photo-1484516758160-69878111a911?w=500">
 <h3>Women Hoodie</h3>
-<p>Winter fashion hoodie</p>
-<div class="price">NPR 3200</div>
+<p class="price">NPR 2800</p>
+<p>Winter hoodie wear</p>
 <button>🛒 Order Now</button>
 </div>
 
 </div>
-</div>
+</section>
 
-<!-- CONTACT SECTION -->
-<div class="contact" id="contact">
-<h2>📞 Contact Us</h2>
+<!-- CONTACT -->
+<section id="contact" style="text-align:center">
+<h2>📍 Contact Information</h2>
 
-<p>☎ Phone: 9708862050</p>
-<p>📍 Address: Tilottama-11, Rupandehi, Nepal</p>
+<div class="contact">
+
+<h3>Vastra Collection</h3>
+<p>📞 Phone: 9708862050</p>
 <p>📧 Email: Vastracollection21@gmail.com</p>
-<p>❤️ Message: All people are warmly welcome</p>
+<p>📍 Location: Tilottama-11, Rupandehi, Nepal</p>
+<p>🌐 Facebook: Vastra Collection</p>
 
-<h3>Send Message</h3>
-
-<input type="text" placeholder="Name - Vastra">
-<br>
-<input type="email" placeholder="Email - Vastracollection21@gmail.com">
-<br>
-<textarea placeholder="Message - All people are warmly welcome"></textarea>
-
-<br>
-<button>Send</button>
+<form>
+<input type="text" placeholder="Name (Vastra)">
+<input type="email" placeholder="Email (Vastracollection21@gmail.com)">
+<textarea>Message - “All people are warmly welcome”</textarea>
+<br><br>
+<button type="submit">Send Message</button>
+</form>
 
 </div>
+</section>
 
 <footer>
 © 2025 Vastra Collection | Fashion Store Nepal
